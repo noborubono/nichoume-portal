@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="utf-8">
 	<meta name="keywords" content="keyword phrase 1, keyword phrase 2" />
@@ -142,7 +142,7 @@
 			<h1>Contact Us</h1>
 			
 			<!-- Breadcrumbs _____________________________________________-->
-			<p itemscope itemtype="http://data-vocabulary.org/Breadcrumb" id="breadcrumbs"><a href="/" rel="home" itemprop="url"><span itemprop="title">Home</span></a> <span class="divider">></span>  <a href="/" itemprop="url"><span itemprop="title">Pages</span></a> <span class="divider">></span> Contact</p>
+			<p itemscope itemtype="http://data-vocabulary.org/Breadcrumb" id="breadcrumbs"><a href="/" rel="home" itemprop="url"><span itemprop="title">Home</span></a> <span class="divider">></span> Contact</p>
 	</div>
 </header>
 
@@ -202,7 +202,7 @@
 
 					<div class="input-block">
 						<label for="comments" accesskey="C"><strong>Comments</strong> (required)</label>
-						<textarea name="comments" cols="40" rows="3" id="comments" spellcheck="true" required="required"></textarea>
+						<textarea name="comments" cols="40" rows="3" id="comments" spellcheck="true" required></textarea>
 					</div>
 				</fieldset>
 
@@ -308,12 +308,12 @@
 jQuery(document).ready(function() {
 	// init gmap
 	 $('#map-content').gMap({
-		address: "2939 4th Ave W, Vancouver, BC V6K 1R3",
+		address: "東京都台東区元浅草1-15-9",
 		scrollwheel: false,
-		zoom: 12,
+		zoom: 15,
 		markers:[
 			{
-				address: "2939 4th Ave W, Vancouver, BC V6K 1R3"
+				address: "東京都台東区元浅草1-15-9"
 			}
 		]
 	});

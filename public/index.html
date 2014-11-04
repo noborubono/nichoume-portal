@@ -446,7 +446,7 @@
   <div class="p70 right">
     <h3>お問い合わせ</h3>
     <mark id="message"></mark>
-    <form method="post" action="contact/contact.php" name="contactform" id="contactform" autocomplete="on">
+<form id="form" name="form" method="post" action="sformmail.php">
       <fieldset>
         <div class="p50 input-block">
           <label for="name" accesskey="U"><strong>お名前</strong> ※必須</label>
@@ -463,16 +463,13 @@
           <input name="subject" type="text" id="subject" />
         </div>
         <div class="input-block">
-          <label for="comments" accesskey="C"><strong>本文</strong> ※必須</label>
-          <textarea name="comments" cols="40" rows="3" id="comments" spellcheck="true" required></textarea>
+          <label for="message" accesskey="C"><strong>本文</strong> ※必須</label>
+          <textarea name="message" cols="40" rows="3" id="message" spellcheck="true" required></textarea>
         </div>
       </fieldset>
-      <fieldset>
-        <legend><strong>Are you human?</strong></legend>
-        <label for="verify" accesskey="V" class="verify left"><img src="contact/image.php" alt="Verification code" /></label>
-        <input name="verify" type="text" id="verify" size="6" required="required" style="width: 50px;" title="This confirms you are a human user and not a spam-bot." />
-      </fieldset>
-      <input type="submit" class="submit" id="submit" value="Send message" />
+      <p><input name="autoReply" type="checkbox" id="autoReply" value="1" />
+送信完了のメールを受け取る</p>
+      <input type="submit" class="submit" id="submit" value="送信する" />
     </form>
   </div>
   <!-- END .p75 -->
@@ -511,7 +508,7 @@
         <h3>Links</h3>
         <ul>
           <li><a href="http://geekhouse.tumblr.com">ギークハウス プロジェクト</a></li>
-          <li><a href="#">WordPress Themes &amp; Templates</a></li>
+          <li><a href="http://www.sapphirus.biz/">メールフォーム(c) Sapphirus.Biz</a></li>
           <li><a href="#">Designagent webdesign</a></li>
           <li><a href="#">Buy this theme</a></li>
           <li><a href="#">Follow on Twitter</a></li>
@@ -532,7 +529,7 @@
     
     <div class="bottom">
       <p class="left">This HTML template was designed by <a href="#">Designagent</a></p>
-      <p class="right">&copy; 2013 Your Company. All rights reserved</p>
+      <p class="right">&copy; 2014 Geek Garage. All rights reserved</p>
     </div>
   </div>
   <!-- END .wrapper FOR footer --> 

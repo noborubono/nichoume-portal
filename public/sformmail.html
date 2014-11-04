@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>フォームメール(入力画面)</title>
+<link href="sformmail.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="MAINLAYOUT">
+<h1>フォームメール</h1>
+<h2>- 入力画面 -</h2>
+<div id="FORM">
+<form id="form" name="form" method="post" action="sformmail.php">
+<table align="center" cellspacing="1">
+<tr>
+<th nowrap="nowrap">名前</th>
+<td><input name="name" type="text" id="name" style="width:340px" /></td>
+</tr>
+<tr>
+<th nowrap="nowrap">メールアドレス<font color="red" class="SmallType">*</font></th>
+<td><input name="email;s" type="text" id="email;s" style="width:340px" /></td>
+</tr>
+<tr>
+<th nowrap="nowrap">件名</th>
+<td><input name="subject" type="text" id="subject" style="width:340px" /></td>
+</tr>
+<tr>
+<th nowrap="nowrap">メッセージ</th>
+<td><textarea name="message" id="message" style="width:340px; height:120px; font-size:12px"></textarea></td>
+</tr>
+<tr>
+<th colspan="2" class="Submit"><p><font color="red">* は入力必須項目です。</font></p>
+<p><input name="autoReply" type="checkbox" id="autoReply" value="1" />
+送信完了のメールを受け取る</p>
+<input type="submit" style="width:80px" value="確 認" />
+<input type="reset" value="リセット" style="width:80px" />
+</tr>
+</table>
+</form>
+</div>
+<div id="Copyright"><a href="http://www.sapphirus.biz/">(c) Sapphirus.Biz</a></div>
+</div>
+</body>
+</html>
